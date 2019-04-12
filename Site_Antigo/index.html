@@ -25,11 +25,14 @@
    	}
    </style>
 
+   <script src='js/alertify.min.js'></script>
+   <link rel = "stylesheet" href = 'css/alertify.min.css' />
+   <link rel = "stylesheet" href = 'css/themes/default.min.css' />
+   <meta name = "viewport" content = 'width = device-width'>
+
   </head>
 
   <body>
-
-
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-info" >
   <a class="navbar-brand" href="index.html"><strong>Início</strong></a>
@@ -45,18 +48,10 @@
       
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <strong>Sobre a oficina</strong>  
-        </a>
+        <strong>Sobre a oficina</strong></a>
+
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#objetivo" >Objetivo</a>
-          <a class="dropdown-item" href="#metodologia">Metodologia</a>
-           <a class="dropdown-item" href="#publico">Público-alvo</a>
-            <a class="dropdown-item" href="#duracao">Duração</a>
-             <a class="dropdown-item" href="#carga">Carga horária e certificação</a>
-              <a class="dropdown-item" href="#o_que_e">O que é preciso para participar?</a>
-               <a class="dropdown-item" href="#como_inscrever">Como fazer minha inscrição?</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="inscricoes.html"> Lista dos oficiniros</a>
+          <a class="dropdown-item" href="selecionados.html"> Lista dos oficineiros</a>
         </div>
       </li>
     </ul>
@@ -64,7 +59,6 @@
 </nav>
 
 <div class="container-fluid">
-	
 
 	<div class="row">
 		<div class="col-12">
@@ -73,7 +67,20 @@
 		</div>
 	</div>
 
-        <div class="row">
+<script type="text/javascript">
+
+window.showAlert = function(){
+    alertify.alert('Alerta', 'Olá, Oficineir@s!<br /><br />Nossos encontros, no mês de abril, já estão agendados!<br/><br/>Quando? 12 e 26 de abril (sextas-feiras)<br/>Horário? Das 14h às 15h30<br/>Local? <b>Miniauditório (Lab. Turismo - Prédio Anexo - 2º andar)</b><br/><br/><a href="selecionados.html">Clique aqui</a> para consultar a Lista de Selecionados<br/><br/>Até logo!');
+}
+//works with modeless too
+alertify.alert().setting('modal', false);
+
+window.showAlert();
+
+</script>
+
+  <div class="row" >
+  
           <div class="col-md-8 offset-md-2">
             <h1 class="btn btn-info btn-lg " id="objetivo" role="button"></a>Objetivo</h1>
             <p class="justificar">Promover a interpretação de textos pertencentes a diversos gêneros discursivos e a escrita de textos em prosa, do tipo dissertativo-argumentativo, sobre um tema de ordem social, científica, cultural ou política.</p>
@@ -115,30 +122,9 @@
             <p class="justificar">A inscrição poderá ser feita a partir das 13h (horário de Brasília) do dia 01/04 e vai até 23h59 do dia 03/04. Devem ser realizadas exclusivamente pela internet, por meio deste site.</p>
             <br /><br />
           </div>
-
+			
         </div>
 
-        <hr>
-
-      </div> <!-- /container -->
-
-
-	<!<div class="row">
-		<div class="col-12">
-			<p class="centralizar" class="container"><a class="btn btn-success btn-lg " href="inscricoes.html" role="button" >LISTA DOS OFICINEIROS SELECIONADOS </a>
-			</p>
-		</div>
-	</div>
-
-    <!--<footer class="container">
-      <a class="centralizar" class="btn btn-primary btn-lg" href="#" role="button">INSCREVA-SE &raquo;</a></p>
-      <p>&copy; IFRN 2019</p>
-  	</footer>-->
-</p>
-</div>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
