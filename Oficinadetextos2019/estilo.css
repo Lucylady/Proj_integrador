@@ -1,0 +1,21 @@
+.centralizar
+{
+ text-align: center;
+ }
+.justificar
+{
+  text-align: justify;
+}
+    
+body
+{
+background-color: #f0ffff
+}
+
+.fonte
+{
+  font-family: Chalkduster;
+ font-size: 15pt;
+ font-weight: bold;
+
+}
