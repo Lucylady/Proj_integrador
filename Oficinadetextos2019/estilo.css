@@ -14,7 +14,7 @@ background-color: #f0ffff
 
 .fonte
 {
-  font-family: Chalkduster;
+ font-family: Chalkduster;
  font-size: 15pt;
  font-weight: bold;
 
@@ -25,4 +25,18 @@ footer
     position: fixed;
     bottom:0;
     left:0;
+}
+
+a{
+	text-decoration: none;
+	
+}
+
+a:link{
+	text-decoration: none;
+}
+
+
+a:active{
+	text-decoration: none;
 }
